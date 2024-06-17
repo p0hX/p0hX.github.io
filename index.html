@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hot Beans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">HOT BEANS.</td>
+                <td id="navigation">
+                    <a href="#bio">About</a>
+                    <a href="#work">Employees Details</a>
+                    <a href="#job">Job Specifications</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Welcome</h1>
+                <a href="file:///O:/IT%20Level%203%20(Y1)/Unit%206/Assignment%202/application.html" class="btn_one">Application form</a>
+
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;">
+                            <a class="social" href="https://www.facebook.com/yourprofile" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;">
+                            <a class="social" href="https://www.twitter.com/yourprofile" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;">
+                            <a class="social" href="https://www.instagram.com/yourprofile" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;">
+                            <a class="social" href="https://www.dribbble.com/yourprofile" target="_blank">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;">
+                            <a class="social" href="https://www.medium.com/@yourprofile" target="_blank">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="bio">
+        <h1>About</h1>
+        <img src="https://st2.depositphotos.com/1760420/6591/i/450/depositphotos_65912143-stock-photo-man-writing-the-words-about.jpg" alt="">
+        <p>
+            Welcome to Hot Beans, your premier web development partner. Our expert team of developers and designers is dedicated to crafting dynamic, user-friendly, and visually captivating websites. We offer a comprehensive range of services, including custom website development, e-commerce solutions, responsive design, SEO optimization, and continuous maintenance and support.
+
+At Hot Beans, we understand that a website is more than just a digital address; it's the core of your online identity. Our mission is to blend cutting-edge technology with creative design to ensure your website is visually appealing, highly functional, and optimized for performance. Whether you’re a startup needing a new site or an established company seeking a redesign, we tailor our services to meet your unique needs.
+
+Our e-commerce solutions provide seamless shopping experiences, secure transactions, and easy inventory management. We prioritize responsive design, ensuring your website looks and performs flawlessly on any device. Additionally, our SEO optimization services improve your site’s visibility and ranking, driving more organic traffic.
+
+We believe in building long-term relationships with our clients, offering ongoing maintenance and support to keep your website running smoothly. Choose Hot Beans and let us bring your digital vision to life, helping you stand out in the crowded online landscape.
+        </p>
+    </div>
+    <div id="work">
+        <h1>Employees Details</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/5/52/Donnie_Ruin_Walsh_BO4.png/revision/latest?cb=20181017234748">
+            <p>
+                Name: Donnie Ruin Walsh
+                Telf:07123456789
+                Position:Project Manager
+                E-mail:ruin@gmail.com
+
+            </p>
+            <img onclick="magnify($(this).attr('src'))" src="https://images.immediate.co.uk/production/volatile/sites/3/2023/08/2023.06.28-06.20-boundingintocomics-649c79f009cdf-Cropped-8d74232.png">
+            <p>
+                Name: Son Goku
+                Telf:07123456789
+                Position:Software Developer
+                E-mail:goku@gmail.com
+            </p>
+            <img onclick="magnify($(this).attr('src'))" src="https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/36/Sanemi_Anime_Profile.png/revision/latest?cb=20191125200428">
+            <p>
+                Name: Sanemi Shinazugawa
+                Telf:07123456789
+                Position:Researcher
+                E-mail:windhashira@gmail.com
+            </p>
+        </div>
+    </div>
+    <div id="job">
+        <h1>Job Specifications</h1>
+        <p>
+            We are seeking a talented and motivated Website Developer to join our dynamic team. As a key player, you will help create, maintain, and enhance our clients' digital presence. The ideal candidate will have a strong background in front-end and/or back-end development, with a keen eye for design and detail.
+
+            Your primary responsibilities include translating visual concepts into functional websites, ensuring seamless user experiences, and optimizing site performance. You will collaborate closely with our design and development teams, working in a fast-paced environment. Your initiative and creativity will be crucial as you troubleshoot issues, perform site maintenance, and implement new features.
+
+            You will write clean, efficient code for responsive websites and web applications, ensuring functionality across browsers and devices. Working with designers to implement user interfaces and coordinating with back-end developers will be essential. Regularly reviewing and enhancing websites for speed, performance, and scalability is key. Promptly identifying and resolving technical issues and bugs, implementing security measures to protect websites, and communicating with clients to understand their needs, provide updates, and gather feedback will be part of your role.
+
+            Staying current with industry trends and technologies, and participating in training and workshops will also be expected. Join our innovative team to work on diverse, challenging projects and contribute to delivering outstanding web solutions. We look forward to welcoming a dedicated Website Developer ready to make an impact.
+        </p>
+        <div id="webdev">
+            <h2>
+             Website Developer Courses
+        </h2>
+        <p>
+            Unlock your web development potential with our expert-led courses. Gain hands-on experience in HTML, CSS, JavaScript, and more. Learn at your own pace, with flexible scheduling and real-world projects. Perfect for beginners and experienced developers. Enroll today and start building your future in tech!
+        </p>
+        <p>
+            Here are some link that might help you with it:
+            <p><a href="https://www.w3schools.com/whatis/" target="_blank">w3schools</a></p>
+                <p><a href="https://generalassemb.ly/students/courses/software-engineering-bootcamp/london?utm_source=google&utm_medium=paid-search-nbr&utm_campaign=TS:TX:NBR:LON:TCLS:WebDev&gad_source=1&gclid=EAIaIQobChMIm9vDzJzbhgMVN5hQBh3TjAKYEAAYASAAEgIy1_D_BwE&gclsrc=aw.ds" target="_blank">generalassemb</a></p>
+                <p><a href="https://codeworks.me/web-development-course/?gad_source=1&gclid=EAIaIQobChMIooC4pp3bhgMV-phQBh0yngE_EAAYASAAEgJ5lvD_BwE" target="_blank">codeworks</a></p>
+        </p>
+    </div>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; hotbeans@email.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Street 123,<br>
+                                        blah blah city,<br>
+                                        blah blah country
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="animated zoomIn" style="animation-delay:2.2s;">
+                                    <a class="social" href="https://www.facebook.com/yourprofile" target="_blank">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </td>
+                                <td class="animated zoomIn" style="animation-delay:2.4s;">
+                                    <a class="social" href="https://www.twitter.com/yourprofile" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </td>
+                                <td class="animated zoomIn" style="animation-delay:2.6s;">
+                                    <a class="social" href="https://www.instagram.com/yourprofile" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </td>
+                                <td class="animated zoomIn" style="animation-delay:2.8s;">
+                                    <a class="social" href="https://www.dribbble.com/yourprofile" target="_blank">
+                                        <i class="fab fa-dribbble"></i>
+                                    </a>
+                                </td>
+                                <td class="animated zoomIn" style="animation-delay:3.0s;">
+                                    <a class="social" href="https://www.medium.com/@yourprofile" target="_blank">
+                                        <i class="fab fa-medium"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        made by 19144962 <br>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
